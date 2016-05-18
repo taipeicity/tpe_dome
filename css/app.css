@@ -1,5 +1,6 @@
 /* fixed navbar to top */
 body {
+  font-family: "微軟正黑體", "Microsoft Jhenghei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-top: 70px;
 }
 
@@ -9,6 +10,11 @@ h2.subtitle {
 
 p {
   text-indent: 32px;
+}
+
+table > caption {
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .row-wrapper {
