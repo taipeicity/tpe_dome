@@ -308,6 +308,11 @@ span.word-break {
   padding-left: 20px;
 }
 
+/* mythbusters */
+.mythbusters-pager {
+  text-align: left;
+}
+
 /* video */
 .video-text {
   margin-top: 1em;
