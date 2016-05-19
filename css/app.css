@@ -306,6 +306,11 @@ span.word-break {
   color: #000;
 }
 
+.main-list > li > a:hover {
+  text-decoration: underline;
+  text-shadow: 2px 2px 1px #ccc;
+}
+
 .sub-list {
   margin-left: 0.5em;
   border-left: 1px solid #999;
@@ -321,6 +326,11 @@ span.word-break {
   display: block;
   width: 100%;
   color: #000;
+}
+
+.sub-list > li > a:hover {
+  text-decoration: underline;
+  text-shadow: 2px 2px 1px #ccc;
 }
 
 .sub-list .sub-list > li {
