@@ -42,16 +42,16 @@ span.word-break {
 
 /* main media block */
 .main-media-block {
+  padding: 0 1em;
   min-height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .index-media-block {}
 
 .news-media-block {
-  background-image: url('../images/main_pic@2x.png');
-  background-position-y: 60%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('../images/taipeidome_banner_1620x400_v01.jpg');
 }
 
 .vision-media-block {
@@ -68,6 +68,7 @@ span.word-break {
 
 .channel-media-block {
   background-image: url('../images/taipeidome_banner_1620x400_v04.jpg');
+  background-position-x: 80%;
 }
 
 @media (max-width: 767px) {
@@ -75,10 +76,14 @@ span.word-break {
     min-height: 300px;
   }
 
-  .index-media-block, .news-media-block {
+  .index-media-block {
     background-image: url('../images/main_pic@1x.png');
     background-position-y: 80%;
     background-position-x: 50%;
+  }
+
+  .news-media-block {
+    background-image: url('../images/taipeidome_banner_800x300_v01.jpg');
   }
 
   .vision-media-block {
@@ -119,8 +124,12 @@ span.word-break {
 }
 
 @media (max-width: 767px) {
-  .title-box h1, .title-box-toggle h1, .title-box-index h1 {
+  .title-box h1, .title-box-toggle h1 {
     font-size: 2em;
+  }
+
+  .title-box-index h1 {
+    font-size: 1.5em
   }
 }
 
