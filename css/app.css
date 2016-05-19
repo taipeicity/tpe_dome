@@ -42,21 +42,59 @@ span.word-break {
 
 /* main media block */
 .main-media-block {
+  min-height: 400px;
+}
+
+.index-media-block {}
+
+.news-media-block {
   background-image: url('../images/main_pic@2x.png');
   background-position-y: 60%;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 400px;
+}
+
+.vision-media-block {
+  background-image: url('../images/taipeidome_banner_1620x400_v01.jpg');
+}
+
+.project-media-block {
+  background-image: url('../images/taipeidome_banner_1620x400_v02.jpg');
+}
+
+.qa-media-block {
+  background-image: url('../images/taipeidome_banner_1620x400_v03.jpg');
+}
+
+.channel-media-block {
+  background-image: url('../images/taipeidome_banner_1620x400_v04.jpg');
 }
 
 @media (max-width: 767px) {
   .main-media-block {
+    min-height: 300px;
+  }
+
+  .index-media-block, .news-media-block {
     background-image: url('../images/main_pic@1x.png');
     background-position-y: 80%;
-    /*background-repeat: no-repeat;
-    background-size: cover;*/
-    min-height: 300px;
     background-position-x: 50%;
+  }
+
+  .vision-media-block {
+    background-image: url('../images/taipeidome_banner_800x300_v01.jpg');
+  }
+
+  .project-media-block {
+    background-image: url('../images/taipeidome_banner_800x300_v02.jpg');
+  }
+
+  .qa-media-block {
+    background-image: url('../images/taipeidome_banner_800x300_v03.jpg');
+  }
+
+  .channel-media-block {
+    background-image: url('../images/taipeidome_banner_800x300_v04.jpg');
   }
 }
 
@@ -88,6 +126,12 @@ span.word-break {
 
 .title-box h1 a, .title-box-toggle h1 a, .title-box-index h1 a {
   color: #000;
+  text-decoration: none;
+  padding: 0.1em;
+}
+
+.qa-media-block .title-box h1 a, .qa-media-block .title-box-toggle h1 a, .qa-media-block .title-box-index h1 a {
+  color: #fff;
   text-decoration: none;
   padding: 0.1em;
 }
@@ -133,10 +177,6 @@ span.word-break {
   .link-box {
     display: none;
   }
-}
-
-.carousel-box {
-  margin: 0 1em;
 }
 
 @media (max-width: 767px) {
