@@ -394,6 +394,10 @@ span.word-break {
   padding-left: 20px;
 }
 
+.qa-img {
+  max-width: 100%;
+}
+
 /* mythbusters */
 .mythbusters-pager {
   text-align: left;
