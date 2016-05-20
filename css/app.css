@@ -404,6 +404,10 @@ span.word-break {
 }
 
 /* video */
+.video-row {
+  padding-bottom: 2em;
+}
+
 .video-text {
   margin-top: 1em;
   font-size: 1.25em;
