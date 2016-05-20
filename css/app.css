@@ -100,13 +100,13 @@ span.word-break {
 
 @media (max-width: 767px) {
   .main-media-block {
-    min-height: 300px;
+    min-height: 200px;
   }
 
   .index-media-block {
     background-image: url('../images/main_pic@1x.png');
     background-position-y: 80%;
-    background-position-x: 50%;
+    background-position-x: 10%;
   }
 
   .news-media-block {
@@ -123,6 +123,7 @@ span.word-break {
 
   .qa-media-block {
     background-image: url('../images/taipeidome_banner_800x300_v03.jpg');
+    background-position-x: 50%; 
   }
 
   .channel-media-block {
