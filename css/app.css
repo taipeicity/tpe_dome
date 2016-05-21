@@ -4,8 +4,12 @@ body {
   padding-top: 70px;
 }
 
-h2.subtitle {
+h2.subtitle, h2.subtitle-l3 {
   color: #016f88;
+}
+
+h2.subtitle-l3 {
+  display: none;
 }
 
 table > caption {
@@ -123,7 +127,7 @@ span.word-break {
 
   .qa-media-block {
     background-image: url('../images/taipeidome_banner_800x300_v03.jpg');
-    background-position-x: 50%; 
+    background-position-x: 50%;
   }
 
   .channel-media-block {
@@ -195,6 +199,10 @@ span.word-break {
 
   h2.subtitle {
     display: none;
+  }
+
+  h2.subtitle-l3 {
+    display: block;
   }
 }
 
