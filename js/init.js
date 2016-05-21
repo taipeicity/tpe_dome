@@ -27,9 +27,17 @@
     });
 
     $("body").on('click', '.scrollup', function () {
-      $("body").animate({
-        scrollTop: 0
-      }, 800);
+      var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+      if (iOS) {
+        $("html, body", parent.document).animate({
+          scrollTop: 0
+        }, 800);
+      }
+      else {
+        $("html, body").animate({
+          scrollTop: 0
+        }, 800);
+      }
     });
   });
 })(Handlebars, jQuery)
