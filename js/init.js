@@ -27,7 +27,7 @@
     });
 
     $("body").on('click', '.scrollup', function () {
-      $("html, body").animate({
+      $("body").animate({
         scrollTop: 0
       }, 800);
     });
