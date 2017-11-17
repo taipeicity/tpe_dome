@@ -5,12 +5,13 @@
     $.ajax({
         url: url,
         type: 'GET',
+        dataType: 'json',
         crossDomain: true,
         headers: {
             'Access-Control-Allow-Origin': '*'
         }
     }).done(function(data) {
-        var news_data = JSON.parse(data);
+        var news_data = data;
 
         for (var i = 0; i < news_data.length; i++) {
             var news_title = news_data[i].title;
