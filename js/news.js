@@ -1,6 +1,6 @@
 (function(jQuery) {
     var $ = jQuery;
-    var url = 'https://doit.blob.core.windows.net/portal/portal_NewsList_Dome.gz';
+    var url = 'https://doit.blob.core.windows.net/portal/portal_NewsList_Dome.json';
 
     $.ajax({
         url: url,
