@@ -5,7 +5,11 @@
     $.ajax({
         url: url,
         type: 'GET',
-        dataType: 'json'
+        dataType: 'json',
+        crossDomain: true,	
+        headers: {	
+            'Access-Control-Allow-Origin': '*'	
+        }
     }).done(function(data) {
         var news_data = data;
 
