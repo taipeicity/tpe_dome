@@ -21,7 +21,7 @@
 
             //var tmp = date_str.match(/^(\d+)-(\d+)-(\d+)/);
             //var news_date = tmp[1] + '/' + tmp[2] + '/' + tmp[3];
-            var news_date = date_str.substring(0, 9);
+            var news_date = date_str.substring(0, 10);
 
             var item_str = '<tr><td>' + (i + 1) + '</td><td><a href="' + news_url + '" target="_blank">' + news_title + '</a></td><td>' + news_deptName + '</td><td>' + news_date + '</td></tr>';
             $('#news_table > tbody').append(item_str);
