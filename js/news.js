@@ -1,15 +1,15 @@
 (function(jQuery) {
     var $ = jQuery;
-    var url = 'https://www.gov.taipei/OpenData.aspx?SN=BD297A1729022566';
+    var url = 'http://taipeicity.github.io/tpe_dome/js/news.json';
 
     $.ajax({
         url: url,
         type: 'GET',
-        /*dataType: 'json',*/
-        crossDomain: true,	
+        dataType: 'json'
+        /*crossDomain: true,	
         headers: {	
             'Access-Control-Allow-Origin': '*'	
-        }
+        }*/
     }).done(function(data) {
         var news_data = data;
 
