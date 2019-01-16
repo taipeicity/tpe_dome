@@ -14,7 +14,7 @@
   <meta property="og:image" content="http://taipeicity.github.io/tpe_dome/images/main_pic2@1x.jpg" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>最新消息 | 臺北市政府 大巨蛋公開資訊專頁</title>
+  <title>會議紀錄test | 臺北市政府 大巨蛋公開資訊專頁</title>
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/app.css">
@@ -149,23 +149,15 @@
             <tbody>
               <tr>
                 <td></td>
-                <td><a href="assets/1080103委員會會議紀錄.pdf" target="_blank">第514次委員會會議紀錄</a></td>
-                <td>2019/01/03</td>
+                <td><a href="http://www.udd.gov.taipei/pages/detail.aspx?Node=162&Page=8848&Index=6" target="_blank">都審委員會會議紀錄(發展局)</a></td>
               </tr>
               <tr>
                 <td></td>
-                <td><a href="assets/1071101第510次委員會紀錄.pdf" target="_blank">第510次委員會會議紀錄</a></td>
-                <td>2018/11/01</td>
+                <td><a href="https://sports.gov.taipei/News.aspx?n=9BF249501C330D42&sms=8DFBF4B391DA086D" target="_blank">例行工作協調會會議記錄(體育局)</a></td>
               </tr>
               <tr>
                 <td></td>
-                <td><a href="assets/1070920第506次委員會紀錄.pdf" target="_blank">第506次委員會會議紀錄</a></td>
-                <td>2018/09/20</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td><a href="assets/5月20日函請遠雄停工公文.pdf" target="_blank">遠雄巨蛋公司涉及違反建築法第58條之規定，由本府都市發展局於104年5月20日勒令停工</a></td>
-                <td>2015/05/20</td>
+                <td><a href="" target="_blank">大巨蛋工作會議紀錄(市府)</a></td>
               </tr>
             </tbody>
           </table>
