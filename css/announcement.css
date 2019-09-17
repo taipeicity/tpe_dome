@@ -101,6 +101,10 @@
   .red {
     color: #d51729;
   }
+
+  .article_info a{
+    text-decoration: underline;
+  }
   .sys-root > .in {
     background-color: #fff !important;
     background-image: unset !important;
