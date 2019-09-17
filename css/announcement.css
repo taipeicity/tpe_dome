@@ -1,0 +1,141 @@
+  html,
+  body,
+  div,
+  p,
+  b,
+  h1,
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  body {
+    /* overflow: hidden; */
+    min-height: 500px;
+    font-family: "Microsoft JhengHei";
+  }
+  .cntSeparator,
+  #cnt_0,
+  #cnt_1,
+  #cnt_2,
+  #cnt_3,
+  #cnt_4,
+  #cnt_5 {
+    display: none;
+  }
+  .banner {
+    /* margin-top: calc(50vh - 250px); */
+    position: relative;
+    width: 100%;
+    background-image: url(../images/dome-banner01.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 500px;
+    margin: 0 0 2em 0;
+  }
+  .banner_text {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .banner_text b {
+    color: #202325;
+    border-radius: 50px;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border: rgba(255, 255, 255, 0.3) solid thin;
+  }
+  h1 {
+    text-align: center;
+  }
+  h1 > img {
+    margin: 0 auto;
+    padding-right: 18px;
+  }
+  h2 {
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-shadow: #fff 1px 1px 10px;
+    margin-bottom: 10px;
+  }
+  .wrapper {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+  }
+  .article {
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border: rgba(255, 255, 255, 0.3) solid thin;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px;
+    margin-bottom: 20px;
+  }
+  .article_info {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 22px 20px;
+    border-radius: 8px;
+    font-size: 1.3em;
+    letter-spacing: 0.5px;
+    line-height: 1.6em;
+    color: #202325;
+    box-shadow: inset rgba(255, 255, 255, 0.95) 1px 1px 8px;
+    border: #fff solid thin;
+  }
+  .blue {
+    color: #196ac4;
+  }
+  a.blue:hover,
+  .red {
+    color: #d51729;
+  }
+  .sys-root > .in {
+    background-color: #fff !important;
+    background-image: unset !important;
+  }
+  @media screen and (max-width: 500px) {
+    h1 > img {
+      width: 160px;
+    }
+    h2 {
+      margin-top: -15px;
+      margin-bottom: 0;
+      font-size: 1.3em;
+    }
+    .wrapper {
+      top: 50px;
+    }
+    .article {
+      width: 90%;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      padding: 0 10px 10px;
+    }
+    .article_info {
+      font-size: 1.1em;
+      padding: 10px 12px;
+    }
+    .banner {
+      min-height: 350px;
+      margin-top: 0;
+    }
+    .banner_text {
+      top: 13px;
+      font-size: 1.1em;
+    }
+    .banner_text b {
+      padding: 5px 30px;
+    }
+  }
