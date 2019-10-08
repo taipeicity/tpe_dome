@@ -42,10 +42,3 @@
   });
 })(Handlebars, jQuery)
 
-$(function() {
-  if (location.protocol != "http:") {
-    setTimeout(function() {
-      window.location.href = "https://dpr.gov.taipei/";
-    }, 5000);
-  }
-});
