@@ -421,3 +421,36 @@ span.word-break {
   margin-top: 1em;
   font-size: 1.25em;
 }
+/*公告設定*/
+.redAlerts {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #d70007;
+  width:100vw;
+  display: block;
+  height: 50px;
+  color: #fff;
+  line-height: 50px;
+  padding-left: 10px;
+  text-align: center;
+}
+.redAlerts a{
+  margin-left: 5px;
+  text-decoration: underline;
+  color: #fff;
+}
+body{
+  padding-top: 0px;
+}
+
+@media (max-width: 620px) {
+  .redAlerts {
+    line-height: 32px;
+    height: 100%;
+    padding-left: 10px;
+    text-align: center;
+    padding:10px 10px;
+  }
+}
