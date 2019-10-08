@@ -42,3 +42,13 @@
   });
 })(Handlebars, jQuery)
 
+$(function() {
+
+ /*公告*/
+  $('nav').removeClass('navbar-fixed-top');
+  $('nav').before('<div class="redAlerts">本網站已進行改版。若須查詢大巨蛋最新資訊，請至新版網站<a href="https://dome.gov.taipei/">https:/dome.gov.taipei/</a></div>');
+
+
+ 
+
+});
