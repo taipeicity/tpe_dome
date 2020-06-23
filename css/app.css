@@ -1,14 +1,24 @@
 /* fixed navbar to top */
 body {
+  font-family: "微軟正黑體", "Microsoft Jhenghei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-top: 70px;
 }
 
-h2.subtitle {
+h2.subtitle, h2.subtitle-l3 {
   color: #016f88;
 }
 
-p {
-  text-indent: 32px;
+h2.subtitle-l3 {
+  display: none;
+}
+
+table > caption {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.source {
+  text-align: right;
 }
 
 .row-wrapper {
@@ -17,6 +27,33 @@ p {
 
 span.word-break {
   display: inline-block;
+}
+
+/* scroll up */
+.scrollup {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  border-radius: 25px;
+  font-size: 2.5em;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.scrollup:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .scrollup {
+    bottom: 25px;
+    right: 25px;
+  }
 }
 
 /* put navbar item center align */
@@ -36,21 +73,65 @@ span.word-break {
 
 /* main media block */
 .main-media-block {
-  background-image: url('../images/main_pic@2x.png');
-  background-position-y: 60%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 0 1em;
   min-height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.index-media-block {}
+
+.news-media-block {
+  background-image: url('../images/taipeidome_banner_1620x400_v01.jpg');
+}
+
+.vision-media-block {
+  background-image: url('../images/taipeidome_banner_1620x400_v01.jpg');
+}
+
+.project-media-block {
+  background-image: url('../images/taipeidome_banner_1620x400_v02.jpg');
+}
+
+.qa-media-block {
+  background-image: url('../images/taipeidome_banner_1620x400_v03.jpg');
+}
+
+.channel-media-block {
+  background-image: url('../images/taipeidome_banner_1620x400_v04.jpg');
+  background-position-x: 80%;
 }
 
 @media (max-width: 767px) {
   .main-media-block {
-    background-image: url('../images/main_pic@1x.png');
-    background-position-y: 80%;
-    /*background-repeat: no-repeat;
-    background-size: cover;*/
-    min-height: 300px;
+    min-height: 200px;
+  }
+
+  .index-media-block {
+    background-image: url('../images/main_pic2@1x.jpg');
+    background-position-y: 70%;
+    background-position-x: 40%;
+  }
+
+  .news-media-block {
+    background-image: url('../images/taipeidome_banner_800x300_v01.jpg');
+  }
+
+  .vision-media-block {
+    background-image: url('../images/taipeidome_banner_800x300_v01.jpg');
+  }
+
+  .project-media-block {
+    background-image: url('../images/taipeidome_banner_800x300_v02.jpg');
+  }
+
+  .qa-media-block {
+    background-image: url('../images/taipeidome_banner_800x300_v03.jpg');
     background-position-x: 50%;
+  }
+
+  .channel-media-block {
+    background-image: url('../images/taipeidome_banner_800x300_v04.jpg');
   }
 }
 
@@ -75,13 +156,23 @@ span.word-break {
 }
 
 @media (max-width: 767px) {
-  .title-box h1, .title-box-toggle h1, .title-box-index h1 {
+  .title-box h1, .title-box-toggle h1 {
     font-size: 2em;
+  }
+
+  .title-box-index h1 {
+    font-size: 1.5em
   }
 }
 
 .title-box h1 a, .title-box-toggle h1 a, .title-box-index h1 a {
   color: #000;
+  text-decoration: none;
+  padding: 0.1em;
+}
+
+.qa-media-block .title-box h1 a, .qa-media-block .title-box-toggle h1 a, .qa-media-block .title-box-index h1 a {
+  color: #fff;
   text-decoration: none;
   padding: 0.1em;
 }
@@ -109,6 +200,10 @@ span.word-break {
   h2.subtitle {
     display: none;
   }
+
+  h2.subtitle-l3 {
+    display: block;
+  }
 }
 
 .link-box {
@@ -127,10 +222,6 @@ span.word-break {
   .link-box {
     display: none;
   }
-}
-
-.carousel-box {
-  margin: 0 1em;
 }
 
 @media (max-width: 767px) {
@@ -206,12 +297,9 @@ span.word-break {
     text-align: center;
   }
 
-  .footer-link {
-    word-spacing: 2em;
-  }
-
   .footer-link a {
     display: inline-block;
+    padding: 0 0.5em;
   }
 }
 
@@ -254,6 +342,11 @@ span.word-break {
   color: #000;
 }
 
+.main-list > li > a:hover {
+  text-decoration: underline;
+  text-shadow: 2px 2px 1px #ccc;
+}
+
 .sub-list {
   margin-left: 0.5em;
   border-left: 1px solid #999;
@@ -269,6 +362,11 @@ span.word-break {
   display: block;
   width: 100%;
   color: #000;
+}
+
+.sub-list > li > a:hover {
+  text-decoration: underline;
+  text-shadow: 2px 2px 1px #ccc;
 }
 
 .sub-list .sub-list > li {
@@ -287,9 +385,72 @@ span.word-break {
   text-align: center;
 }
 
+.question-text {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 .answer-symbol {
   color: #84c000;
   font-size: 5em;
   font-weight: 500;
   text-align: center;
+}
+
+.answer-text p {
+  padding-left: 20px;
+}
+
+.qa-img {
+  max-width: 100%;
+}
+
+/* mythbusters */
+.mythbusters-pager {
+  text-align: left;
+}
+
+/* video */
+.video-row {
+  padding-bottom: 2em;
+}
+
+.video-text {
+  margin-top: 1em;
+  font-size: 1.25em;
+}
+/*公告設定*/
+.redAlerts {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #d70007;
+  width:100vw;
+  display: block;
+  height: 50px;
+  color: #fff;
+  line-height: 50px;
+  padding-left: 10px;
+  text-align: center;
+}
+.redAlerts a{
+  margin-left: 5px;
+  text-decoration: underline;
+  color: #fff;
+}
+body{
+  padding-top: 0px;
+}
+
+@media (max-width: 620px) {
+  .redAlerts {
+    line-height: 32px;
+    height: 100%;
+    padding-left: 10px;
+    text-align: center;
+    padding:10px 10px;
+  }
 }
